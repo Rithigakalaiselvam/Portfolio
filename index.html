@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rithiga K - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #004d40;
+      text-align: center;
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      min-height: 100vh;
+      box-sizing: border-box;
+
+      background: url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat;
+      background-color: #e0f7fa;
+    }
+
+    nav {
+      margin: 30px 0 50px 0;
+      z-index: 10;
+      position: relative;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0277bd;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #01579b;
+    }
+
+    h1 {
+      color: #01579b;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 3px #ffffff;
+      position: relative;
+      z-index: 10;
+    }
+
+    p.subtitle {
+      font-size: 1.3rem;
+      color: #0288d1;
+      margin-bottom: 40px;
+      font-weight: 600;
+      text-shadow: 0 0 2px #ffffff;
+      position: relative;
+      z-index: 10;
+    }
+
+    section {
+      margin-bottom: 50px;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(2, 119, 189, 0.3);
+      color: #004d40;
+      position: relative;
+      z-index: 10;
+    }
+
+    section h2 {
+      color: #0277bd;
+      margin-bottom: 15px;
+      font-size: 2rem;
+      border-bottom: 2px solid #4fc3f7;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #004d40;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #0288d1;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #0288d1aa;
+      position: relative;
+      z-index: 10;
+    }
+
+    .btn:hover {
+      background: #01579b;
+      box-shadow: 0 0 20px #01579bcc;
+    }
+
+    .decorative-img {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 10px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      section {
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Portfolio</h1>
+  <p class="subtitle">Hi, I'm Rithiga K – Frontend Developer & Java Programmer</p>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+    <a href="certification.html">Certification</a>
+  </nav>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am passionate about crafting elegant and efficient web applications. With expertise in
+      Java and frontend technologies like HTML, CSS, JavaScript, React.js, I build responsive and user-friendly
+      websites. I enjoy solving complex problems and continuously learning new tools to enhance my skills.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills Snapshot</h2>
+    <p>
+      Java, JavaScript, React.js, HTML5, CSS3, Bootstrap, REST APIs, Git & GitHub,
+      Responsive Design, Problem Solving, Agile Methodology.
+    </p>
+  </section>
+
+  <section>
+    <h2>Featured Projects</h2>
+    <p>
+      Check out some of my recent work showcasing my ability to deliver interactive, scalable web applications.
+      From a tourism website to a multi-cancer detection AI project, I enjoy combining creativity with technology.
+    </p>
+    <a href="projects.html" class="btn">View Projects</a>
+  </section>
+
+  <section>
+    <h2>Get In Touch</h2>
+    <p>
+      Interested in collaborating or learning more? Feel free to reach out through the Contact page.
+      I’m always open to exciting opportunities and new challenges!
+    </p>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </section>
+</body>
+</html>
