@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Certificates Portfolio</title>
+  <style>
+    /* Background and page style */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Overlay to darken background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 50, 0.7);
+      z-index: -1;
+    }
+
+    header {
+      padding: 30px 20px 10px;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      box-shadow: 0 0 15px #0008;
+      border-bottom: 1px solid #007bff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #80c0ff;
+      text-shadow: 0 0 10px #007bff;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #cce0ff;
+    }
+
+    /* Certificates container */
+    .certificates {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Each certificate box */
+    .cert-container {
+      background: rgba(255, 255, 255, 0.95);
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+      padding: 15px;
+      max-width: 280px;
+      width: 100%;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .cert-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 40px rgba(0, 123, 255, 0.7);
+    }
+
+    .cert-container img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      margin-bottom: 10px;
+      user-select: none;
+    }
+
+    .cert-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #004a99;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 50, 0.6);
+      font-size: 0.9rem;
+      color: #aaccee;
+      box-shadow: inset 0 1px 10px #007bffaa;
+      margin-top: auto;
+    }
+
+    /* Decorative images in corners */
+    .decorative-img {
+      position: fixed;
+      width: 120px;
+      opacity: 0.15;
+      user-select: none;
+      pointer-events: none;
+      filter: drop-shadow(0 0 2px #007bffaa);
+    }
+    .decorative-top-left {
+      top: 10px;
+      left: 10px;
+      transform: rotate(-15deg);
+    }
+    .decorative-bottom-right {
+      bottom: 10px;
+      right: 10px;
+      transform: rotate(15deg);
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .certificates {
+        gap: 15px;
+      }
+      .cert-container {
+        max-width: 90vw;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative images -->
+  <img class="decorative-img decorative-top-left" src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Decoration" />
+  <img class="decorative-img decorative-bottom-right" src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Decoration" />
+
+  <header>
+    <h1>My Professional Certificates</h1>
+    <p>Welcome to my certificate portfolio! Here you can find verified credentials showcasing my skills and dedication in various domains.</p>
+  </header>
+
+  <main class="certificates">
+
+    <a class="cert-container" href="https://drive.google.com/file/d/1dP3qzlX718hEDb3wEizid89e4NtKRB1r/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" title="Certificate 1">
+      
+      <div class="cert-title">Database Management System certification</div>
+    </a>
+
+    <a class="cert-container" href="https://drive.google.com/file/d/1dQMI1vW-RSoZdHu0wsLiLLFc3sTxo7va/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" title="Certificate 2">
+      
+      <div class="cert-title">Java Fullstack Certification</div>
+    </a>
+
+    <a class="cert-container" href="https://drive.google.com/file/d/1dS2HALOBA0sVJf_jNMX9srwv2Zb9lFhY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" title="Certificate 3">
+      
+      <div class="cert-title">Oracle - cloud computing certification</div>
+    </a>
+
+    <a class="cert-container" href="https://drive.google.com/file/d/1dWfTYEtItqTCSk3YQoqcuVoUpzC1cP-E/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" title="Certificate 4">
+      
+      <div class="cert-title">Java Programming Internship Completion</div>
+    </a>
+
+    <a class="cert-container" href="https://drive.google.com/file/d/1dXGxd1NzOxg-BINkoQVLA_Uf30D3QCik/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" title="Certificate 5">
+     
+      <div class="cert-title">Web development Internship completion certification</div>
+    </a>
+
+    <a class="cert-container" href="https://drive.google.com/file/d/1d_WfOj1RMazwZ86YN2EipJGjtax9tmVC/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" title="Certificate 6">
+      
+      <div class="cert-title">SQL for Data science Certification</div>
+    </a>
+
+    <a class="cert-container" href="https://drive.google.com/file/d/1dSg_Cvm4K3CTyxRQMSrcrMy1-Ak-jBt6/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" title="Certificate 7">
+      
+      <div class="cert-title">OOPS in Java Certification</div>
+    </a>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved. | Designed by You.
+  </footer>
+
+</body>
+</html>
